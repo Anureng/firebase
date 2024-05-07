@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Home = () => {
+const page = () => {
     return (
-        <div className='bg-[#071829]'>
+        <div>
             Home
         </div>
     )
 }
 
-export default Home
+export default page
