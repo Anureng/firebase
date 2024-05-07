@@ -49,7 +49,7 @@ function SignIn() {
         e.preventDefault();
         sendSignInLinkToEmail(auth, email, {
             // this is the URL that we will redirect back to after clicking on the link in mailbox
-            url: 'http://localhost:3000/',
+            url: 'firebase-pi-two.vercel.app',
             handleCodeInApp: true,
         }).then(() => {
             localStorage.setItem('email', email);
