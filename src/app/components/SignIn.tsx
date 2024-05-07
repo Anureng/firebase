@@ -29,7 +29,7 @@ function SignIn() {
                 email = window.prompt('Please provide your email');
             }
             // after that we will complete the login process
-            signInWithEmailLink(auth, localStorage.getItem('email'), window.location.href)
+            signInWithEmailLink(auth, localStorage.getItem('email') || '', window.location.href)
                 .then((result) => {
                     // we can get the user from result.user but no need in this case
                     console.log(result.user);
